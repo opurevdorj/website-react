@@ -1,0 +1,46 @@
+#backgroundContainer {
+    background: url('../../images/home-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#textContainer {
+    display: flex;
+   flex-direction: column;
+   /* position: absolute; */
+   width: 420px;
+   height: 250px;
+   margin-top: 230px;
+   margin-left: 100px;
+   color: #fff;
+   font-family: 'Work sans', sans-serif;
+   justify-content: space-between;
+   text-align: start;
+
+}
+
+#firstText {
+    font-size: 40px;
+}
+#secondText {
+    font-size: 18px;
+}
+
+#inputAccess {
+    width: 250px;
+    height: 40px;
+}
+
+#buttonAccess {
+    width: 150px;
+    height: 45px;
+    background-color: #0BBEF2;
+    border-radius: 5px;
+    color: #fff;
+}
+#accessInputContainer {
+    display: flex;
+    justify-content: space-between;
+}

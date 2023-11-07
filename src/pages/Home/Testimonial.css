@@ -1,0 +1,28 @@
+.testimonialContainer {
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.subContainer {
+    width: 1080px;
+    height: 100%;
+    position: relative;
+    
+}
+.titleContainer {
+    padding-top: 160px;
+    padding-bottom: 120px;
+    font-size: 48px;
+    text-decoration: center;
+    font-weight: 800px;
+    
+}
+.cardContainer {
+    width: 87vw;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,37 @@
+.footerContainer {
+    background-color:  #252B3B;
+    width: 100vw;
+height: 250px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.footerSubContainer {
+    width: 1080px;
+    height: 250px;
+display: flex;
+flex-direction: row;
+align-items: center;
+color: #fff;
+font-size: 14px;
+justify-content: space-between;
+
+
+
+}
+.menuContainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 27px;
+   
+      
+}
+
+.menuTitles {
+    padding-bottom: 30px;
+}

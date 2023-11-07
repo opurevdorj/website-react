@@ -1,0 +1,22 @@
+
+.headerContainer {
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+
+.header {
+  width: 1080px;
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.menuItems {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}

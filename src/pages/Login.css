@@ -1,0 +1,102 @@
+#container {
+    background: url('../images/login-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  
+  
+
+}
+
+#title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #0BBEF2;
+ 
+  
+  
+  }
+
+  #inputContainer {
+    margin-left: 520px;
+    /* display: flex;
+  position: absolute;
+    justify-content: center; */
+    width: 400px;
+    /* text-align: center; */
+    /* height: 200px; */
+    /* align-items: center;  */
+    flex-direction: column;
+   
+   
+  }
+
+  
+  
+  .inputNames {
+    display: flex;
+   
+  } 
+  
+  .inputs {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: transparent;
+  }
+  
+  #policyContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    width: 100%;
+    
+  }
+  
+  #signupButton {
+  width: 400px;  
+  height: 30px;
+  border-radius: 10px;
+  border: transparent;
+  margin-top: 50px;
+  background-color: #0BBEF2;
+  color: white;
+  margin-bottom: 20px;
+ 
+  }
+  
+  
+  #notification {
+    color: red;
+    font-size: 12px;
+    
+  }
+  
+  #forgotPassword {
+    font-size: 12px;
+    color: blue;
+    margin-left: 220px;
+  }
+  
+  #haveAccount {
+    font-size: 15px;
+    margin-top: 20px;
+   
+  }
+  .signInandSignUp {
+    border: transparent;
+    color:  #0BBEF2;
+    background-color: transparent;
+    margin-left: 10px;
+    
+  }
+  #googleButton {
+    margin-top: 100px;
+   
+  }
