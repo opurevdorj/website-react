@@ -30,7 +30,7 @@ function Posts(props) {
       }, 3000);
     };
 
-    return () => getData();
+  getData();
   }, []);
   console.log(data);
   const [openModal, setOpenModal] = useState(false);

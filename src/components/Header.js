@@ -29,16 +29,18 @@ function Header(props) {
     navigate("/Posts");
   };
 
-  const handleServicesPage = () => {
-    navigate("/Services");
+  const handleMyProfilePage = () => {
+    navigate("/MyProfile");
   };
 
   const handleContactPage = () => {
     navigate("/Contact");
   };
 
-  const handleGetAccess = () => {
-    navigate("/Contact");
+  const isAdmin = user && user.email === "odnooguga@gmail.com";
+
+  const handleAdminPage = () => {
+    navigate("/Admin");
   };
 
   // const handleLoginPage = () => {
@@ -61,19 +63,51 @@ function Header(props) {
         </div>
         {user ? (
           <div className="menuItems">
-            <span onClick={handlePostsPage} style={{ cursor: "pointer", color: darkTheme ? "#6d7d88" : "#fff"}}>
+            <span
+              onClick={handlePostsPage}
+              style={{
+                cursor: "pointer",
+                color: darkTheme ? "#6d7d88" : "#fff",
+              }}
+            >
               Posts
             </span>
-            <span onClick={handleServicesPage} style={{ cursor: "pointer", color: darkTheme ? "#6d7d88" : "#fff" }}>
-              Services
+            <span
+              onClick={handleMyProfilePage}
+              style={{
+                cursor: "pointer",
+                color: darkTheme ? "#6d7d88" : "#fff",
+              }}
+            >
+              My Profile
             </span>
-            <span onClick={handleContactPage} style={{ cursor: "pointer", color: darkTheme ? "#6d7d88" : "#fff" }}>
+            <span
+              onClick={handleContactPage}
+              style={{
+                cursor: "pointer",
+                color: darkTheme ? "#6d7d88" : "#fff",
+              }}
+            >
               Contact
             </span>
-            <span onClick={handleGetAccess} style={{ cursor: "pointer", color: darkTheme ? "#6d7d88" : "#fff" }}>
-              Get Access
-            </span>
-            <span onClick={handleSignOut} style={{ cursor: "pointer", color: darkTheme ? "#6d7d88" : "#fff" }}>
+            {isAdmin && (
+              <span
+                onClick={handleAdminPage}
+                style={{
+                  cursor: "pointer",
+                  color: darkTheme ? "#6d7d88" : "#fff",
+                }}
+              >
+                Admin
+              </span>
+            )}
+            <span
+              onClick={handleSignOut}
+              style={{
+                cursor: "pointer",
+                color: darkTheme ? "#6d7d88" : "#fff",
+              }}
+            >
               Sign Out
             </span>
           </div>

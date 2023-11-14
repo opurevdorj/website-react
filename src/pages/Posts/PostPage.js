@@ -55,7 +55,7 @@ function PostPage(props) {
       });
       setLoading(false);
     };
-    return () => getBlogData();
+   getBlogData();
   }, [selectedBlogId]);
 
   const handleCommentButton = async () => {

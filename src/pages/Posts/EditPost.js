@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import EditPostModal from "./EditPostModal";
 import DeletePostModal from "./DeletePostModal";
 
+
 function EditPost(props) {
   const { blogData, userId } = props;
   const [openEditModal, setOpenEditModal] = useState(false);
@@ -24,6 +25,10 @@ function EditPost(props) {
   const closeEditModal = () => {
     setOpenEditModal(false);
   };
+  
+console.log(blogData);
+const ts = new Date(blogData.timeStamp);
+console.log(ts.toDateString());
   return (
     <div>
       {blogData.userId === userId && (

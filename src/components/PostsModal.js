@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import { addDoc } from "firebase/firestore";
+import { addDoc, serverTimestamp } from "firebase/firestore";
 import { blogsCollection, storage } from "../firebase/myfirebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import * as yup from "yup";
@@ -122,6 +122,7 @@ function PostsModal(props) {
         userName: user.displayName,
         userId: user.uid,
         blogParagraph: formValues.paragraph,
+        timeStamp: serverTimestamp()
       })
         .then((response) => {
           setFormValues({image: "", title: "", previewText: "", paragraph: ""});
